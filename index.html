@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Suite completa de examenes de agudeza visual, sensibilidad al contraste, astigmatismo, daltonismo, visión estereoscópica (3d) y tests de visión cercana.  Incluye una pantalla de pared de alta resolución y un control digital  con alcance mayor a 10 metros. 
+    La interfaz de control es completamente intuitiva y muy facil de aprender.
+    Mejora la confianza de tus pacientes con nuestros tests dinamicos, configurables y de alta precisión.
+    ">
+    <title>Universal Eye Charts - Test de Agudeza Visual Computarizado</title>
+    <style>
+        *, *::after, *::before{
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        @font-face{
+            font-family: fabiolo;
+            src: url(font/fabiolo.regular.ttf)
+        }
+        @font-face{
+            font-family: trench;
+            src: url(font/trench100free.otf)
+        }
+        .top-bar{
+            background-color: rgba(21,25,26,1);
+            position: sticky;
+            top: 0;
+            height: 64px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 3em;
+            padding-right: 3em;
+            box-shadow: 0 3px 5px -1px rgba(0,0,0,.2), 0 6px 10px 0 rgba(0,0,0,.14), 0 1px 18px 0 rgba(0,0,0,.12);
+
+        }
+        .top-bar.sticky{
+            height: 48px;
+
+            transition: height 200ms linear;
+
+        }
+        nav>a{
+            color: white;
+            text-decoration: none;
+            font-family: trench,fabiolo,-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 1.1rem;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            letter-spacing: 1px;
+            
+
+
+        }
+        nav{
+            width: 36rem;
+            display: flex;
+            justify-content: space-between;
+            height: 100%;
+
+            
+        }
+        .home{
+            display: flex;
+            align-items: center;
+            width: 10rem;
+            justify-content: space-around;
+        }
+        .home p{
+            color: white;
+            font-family: trench,fabiolo, sans-serif;
+
+            font-size: 1.25em;
+            /* text-transform: uppercase; */
+           
+        }
+        .logo{
+            width: 48px;
+            height:48px;
+        }
+
+        .C{
+            height: 200vh;
+        }
+        .blue1{
+            fill: #0091ea;
+        }
+        .blue2{
+            fill: #03a9f4;
+            /* fill: #29b6f6 */
+        }
+        .blue3{
+            /* fill: #18ffff; */
+             fill: #64ffff;
+        }
+        .letter-color-white{
+            fill: #ffffff;
+        }
+        .letter-color-black{
+            fill: #000000
+        }
+        @media screen and (max-width:768px){
+            .top-bar{
+                padding-left: 1em;
+              padding-right: 1em;
+            }
+            nav{
+                width:33rem; 
+               
+            } 
+            
+        }
+    </style>
+</head>
+<body class="C">
+    <div class="top-bar">
+        <div class="home">
+            <div class="logo">
+                    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+
+                        
+                        <g id="Layer_7" class="ishigroups">
+                            <circle class="st1 blue1" cx="87.5" cy="108.5" r="37.5"></circle>
+                            <circle class="st1 blue3" cx="442.5" cy="390.5" r="37.5"></circle>
+                            <circle class="st1 blue3" cx="36.5" cy="273.5" r="32.5"></circle>
+                            <circle class="st1 blue3" cx="362" cy="219" r="20"></circle>
+                            <circle class="st1 blue2" cx="415" cy="260" r="20"></circle>
+                            <circle class="st1 blue2" cx="237" cy="256" r="20"></circle>
+                            <circle class="st1 blue2" cx="491" cy="259" r="20"></circle>
+                            <circle class="st1 blue2" cx="176" cy="219" r="20"></circle>
+                            <circle class="st1 blue3" cx="311" cy="34" r="20"></circle>
+                            <circle class="st1 blue2" cx="234" cy="410" r="20"></circle>
+                            <circle class="st1 blue2" cx="274" cy="154" r="20"></circle>
+                            <circle class="st1 blue3" cx="282" cy="96" r="20"></circle>
+                            <circle class="st1 blue3" cx="176" cy="297" r="20"></circle>
+                            <circle class="st1 blue1" cx="64" cy="389" r="25"></circle>
+                            <circle class="st1 blue3" cx="446" cy="118" r="25"></circle>
+                            <circle class="st1 blue1" cx="276" cy="368" r="25"></circle>
+                            <circle class="st1 blue1" cx="245" cy="35" r="30"></circle>
+                            <circle class="st1 blue1" cx="483" cy="335" r="20"></circle>
+                            <circle class="st1 blue1" cx="23" cy="214" r="20"></circle>
+                            <circle class="st1 blue1" cx="354" cy="282" r="30"></circle>
+                            <circle class="st1 blue1" cx="247" cy="471" r="35"></circle>
+                            <circle class="st1 blue2" cx="221" cy="108" r="35"></circle>
+                            <circle class="st1 blue3" cx="159" cy="58" r="35"></circle>
+                            <circle class="st1 blue1" cx="366" cy="90" r="55"></circle>
+                            <circle class="st1 blue1" cx="149" cy="428" r="55"></circle>
+                            <circle class="st1 blue3" cx="347" cy="431" r="55"></circle>
+                        </g>
+                        <g id="Layer_1">
+                            <polygon class="st2 letter-color-white" points="202.2,149.3 159.6,149.3 116.9,149.3 74.2,149.3 31.6,149.3 31.6,192 74.2,192 74.2,234.7 74.2,277.3 
+                                74.2,320 31.6,320 31.6,362.7 74.2,362.7 116.9,362.7 159.6,362.7 202.2,362.7 244.9,362.7 244.9,320 244.9,277.3 202.2,277.3 
+                                202.2,320 159.6,320 116.9,320 116.9,277.3 159.6,277.3 159.6,234.7 116.9,234.7 116.9,192 159.6,192 202.2,192 202.2,234.7 
+                                244.9,234.7 244.9,192 244.9,149.3 	"></polygon>
+                            <path class="st2 letter-color-white" d="M438.6,145.9v22.2c-18.5-13.9-41.6-22.2-66.6-22.2c-61.3,0-110.9,49.7-110.9,110.9s49.7,110.9,110.9,110.9
+                                c53.7,0,98.4-38.1,108.7-88.7h-45.5c-8.8,26.6-33.9,45.9-63.5,45.9c-37,0-66.9-30-66.9-66.9c0-37,30-66.9,66.9-66.9
+                                c28.8,0,53.3,18.2,62.8,43.6h4.2h42.2h2.2v-88.7H438.6z"></path>
+                        </g>
+                        </svg>
+                        
+            </div>
+            <p>Eye Charts</p>
+        </div>
+        <nav>
+            <a href="">Universal</a>
+            <a href="">Caracteristicas</a>
+            <a href="">Productos</a>
+            <a href="">Contacto</a>
+            <a href="">FAQ</a>
+        </nav>
+    </div>
+
+    <h1>Suite completa de examenes de agudeza visual</h1>
+    <h2></h2>
+    <p> lorem ipsum dolor sit ammet, consequteur</p>
+    <p> lorem ipsum dolor sit ammet, consequteur</p>
+    <p> lorem ipsum dolor sit ammet, consequteur</p>
+    <p> lorem ipsum dolor sit ammet, consequteur</p>
+    <p> lorem ipsum dolor sit ammet, consequteur</p>
+    <p> lorem ipsum dolor sit ammet, consequteur</p>
+    <p> lorem ipsum dolor sit ammet, consequteur</p>
+    <p> lorem ipsum dolor sit ammet, consequteur</p>
+    <p> lorem ipsum dolor sit ammet, consequteur</p>
+    <p> lorem ipsum dolor sit ammet, consequteur</p>
+    <p> lorem ipsum dolor sit ammet, consequteur</p>
+    <p> lorem ipsum dolor sit ammet, consequteur</p>
+    <p> lorem ipsum dolor sit ammet, consequteur</p>
+    <p> lorem ipsum dolor sit ammet, consequteur</p>
+
+    
+    <script>
+        (function(){
+            var topbar = document.querySelector(".top-bar");
+            document.addEventListener('scroll', function(){
+                console.log(window.pageYOffset)
+                if(window.pageYOffset>200){
+                 topbar.classList.add("sticky")
+                 
+                }else{
+                    let rem = document.querySelector(".sticky")
+                    if(rem) rem.classList.remove("sticky")
+                }
+                
+            })
+        })()
+    </script>
+</body>
+</html>
