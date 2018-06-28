@@ -23,9 +23,14 @@
             font-family: trench;
             src: url(font/trench100free.otf)
         }
+        @font-face{
+            font-family: roboto;
+            src: url(font/Roboto-Regular.ttf)
+        }
         .top-bar{
             background-color: rgba(21,25,26,1);
             position: sticky;
+            z-index: 100;
             top: 0;
             height: 64px;
             display: flex;
@@ -102,17 +107,83 @@
         .letter-color-black{
             fill: #000000
         }
+        h1{
+            text-align: center;
+            font-size: 36px;
+            font-family: Roboto, sans-serif;
+            color: #141823;
+            max-width: 500px;
+            display:block;
+            margin: 1em auto;
+        }
+        h2{
+            font-size: 1.063em;
+            margin: 1em;
+            margin-left: 2em;
+            margin-right: 2em;
+            text-align: justify;
+            font-family: Roboto, sans-serif;
+            font-weight: 300;
+        }
+        h1,h2{
+            color: black;
+        }
+
+        .prim{
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            background-color: #f9c5d1;
+            background-image: linear-gradient(135deg, #f9c5d1 0%, #9795ef 74%);
+
+            
+
+        }
+        .title {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 100%;
+        }
+        .pantalla{
+            position: relative;
+            width: 100%;
+            height: 500px;
+        }
+        .pantalla>*{
+            position: absolute;
+            margin-left: auto;
+            margin-right: auto;
+            left: 0;
+            right:0;
+        }
+
         @media screen and (max-width:768px){
             .top-bar{
                 padding-left: 1em;
-              padding-right: 1em;
+                padding-right: 1em;
             }
             nav{
                 width:33rem; 
+                display:none;
                
             } 
+            h1{
+                font-size: 1.5em;
+                max-width: 400px;
+                display:block;
+                margin:1em;
+            }
+            h2{
+                margin:1em;
+            }
+
             
         }
+        @media screen and (max-width:1200px){
+
+        }
+       
+        
     </style>
 </head>
 <body class="C">
@@ -172,9 +243,31 @@
             <a href="">FAQ</a>
         </nav>
     </div>
+    <section class="prim">
+        <div class="title">
+                <h1>Suite de Examenes de Agudeza Visual</h1>
+                <h2>Incluye el más amplio conjunto de pruebas diagnosticas y tests de sensibilidad al contraste, astigmatismo, daltonismo, visión estereoscópica (3d) y examenes de visión cercana. 
+                Desarrollado sobre una interfaz de control intuitiva y facil de aprender.
+                </h2>
 
-    <h1>Suite completa de examenes de agudeza visual</h1>
-    <h2></h2>
+        </div>
+        <div class="pantalla">
+                
+                <img src="./src/atest-01.png" alt="" class="atest">
+                <img src="./src/atest-02.png" alt="" class="atest">
+                <img src="./src/atest-03.png" alt="" class="atest">
+                <img src="./src/atest-04.png" alt="" class="atest">
+                <img src="./src/atest-05.png" alt="" class="atest">
+                <img src="./src/atest-06.png" alt="" class="atest">
+                <img id="pantalla-brd"src="./src/apantalla-brd2.png" alt="">
+                
+        </div>
+        
+    </section>
+
+    
+   <p>!!!under</p>
+    
     <p> lorem ipsum dolor sit ammet, consequteur</p>
     <p> lorem ipsum dolor sit ammet, consequteur</p>
     <p> lorem ipsum dolor sit ammet, consequteur</p>
@@ -205,6 +298,24 @@
                 }
                 
             })
+
+            var imgtests = document.getElementsByClassName("atest");
+            var next = 0;
+            console.log(imgtests.length)
+            setInterval(function(){
+                console.log(next)
+                for(var i =0; i< imgtests.length; i++){
+                    if(i == next){
+                        imgtests[i].style.visibility = "visible";
+                    }
+                    else{
+                        imgtests[i].style.visibility = "hidden";
+                    }
+                   
+                }
+                next = (next+1)%imgtests.length;
+            }, 4000)
+
         })()
     </script>
 </body>
